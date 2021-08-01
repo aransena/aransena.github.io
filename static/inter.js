@@ -1,7 +1,7 @@
 function setup(){
 	frameRate(60);
 	createCanvas(windowWidth, windowHeight);
-	textFont(Helvetica);
+// 	textFont(Helvetica);
 	textSize(windowWidth / 10);
 	textAlign(CENTER, CENTER);
 }
