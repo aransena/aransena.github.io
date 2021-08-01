@@ -1,7 +1,7 @@
 function setup(){
 	frameRate(60);
 	createCanvas(windowWidth, windowHeight);
-	//textFont(Helvetica);
+	textFont(Helvetica);
 	textSize(windowWidth / 10);
 	textAlign(CENTER, CENTER);
 }
@@ -12,18 +12,20 @@ function draw(){
 	g = 255*(sin(2*Math.PI*.33 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	b = 255*(sin(2*Math.PI*.66 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	background(r, g, b);
-	offsetx = (sin(Math.PI*2*(frameCount/100)%60)*0.5 + 0.5)*5;
-	offsety = (cos(Math.PI*2*(frameCount/100)%60)*0.5 + 0.5)*5;
+	offsetx = (sin(Math.PI*2*(frameCount/10)%60)*0.5 + 0.5)*5;
+	offsety = (sin(Math.PI*2*(frameCount/10)%60)*0.5 + 0.5)*5;
 	ro = 255*(sin(Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	go = 255*(sin(2*Math.PI*.33 + 2*Math.PI/9 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	bo = 255*(sin(2*Math.PI*.66 + 2*Math.PI/9 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	stroke(255-ro, 255-go, 255-bo);
 	fill(255-ro, 255-go, 255-bo);
+	textSize(windowWidth / 12);
 	text("Aran Sena", windowWidth/2 + offsetx*10, windowHeight/2 + offsety*10)
 
 	i = 0;
 	stroke(255-r, 255-g, 255-b);
 	fill(255-r, 255-g, 255-b);
+	textSize(windowWidth / 10);
 	text("Aran Sena", windowWidth/2 + i*10, windowHeight/2 + i*10)
 
 
