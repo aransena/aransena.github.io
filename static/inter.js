@@ -19,7 +19,8 @@ function draw(){
 	bo = 255*(sin(2*Math.PI*.66 + 2*Math.PI/9 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	stroke(255-ro, 255-go, 255-bo);
 	fill(255-ro, 255-go, 255-bo);
-	textSize(windowWidth / 12);
+	let offsetsize = windowWidth/10; //((5-offsetx)/5) * (windowWidth / 10);
+	textSize(offsetsize);
 	text("Aran Sena", windowWidth/2 + offsetx*10, windowHeight/2 + offsety*10)
 
 	i = 0;
