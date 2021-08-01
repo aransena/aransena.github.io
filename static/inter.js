@@ -5,5 +5,5 @@ function setup(){
 
 function draw(){
 	
-	background(255*(sin(Math.PI*2*(frameRate/60))*0.5 + 0.5));
+	background(255*(sin(Math.PI*2*(frameCount/60))*0.5 + 0.5));
 }
