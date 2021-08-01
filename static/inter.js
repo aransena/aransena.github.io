@@ -2,7 +2,7 @@ function setup(){
 	frameRate(60);
 	createCanvas(windowWidth, windowHeight);
 	textFont(Helvetica);
-	textSize(width / 3);
+	textSize(windowWidth / 3);
 	textAlign(CENTER, CENTER);
 }
 
