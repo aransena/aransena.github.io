@@ -12,8 +12,8 @@ function draw(){
 	g = 255*(sin(2*Math.PI*.33 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	b = 255*(sin(2*Math.PI*.66 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	background(r, g, b);
-	offsetx = (sin(Math.PI*2*(frameCount/1000)%60)*0.5 + 0.5)*0.25;
-	offsety = (sin(Math.PI*2*(frameCount/1000)%60)*0.5 + 0.5)*0.25;
+	offsetx = (sin(Math.PI*2*(frameCount/1000)%60)*0.5 + 0.5)*0.75;
+	offsety = (sin(Math.PI*2*(frameCount/1000)%60)*0.5 + 0.5)*0.75;
 	ro = 255*(sin(Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	go = 255*(sin(2*Math.PI*.33 + 2*Math.PI/9 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
 	bo = 255*(sin(2*Math.PI*.66 + 2*Math.PI/9 + Math.PI*2*((frameCount/1000)%60))*0.5 + 0.5);
