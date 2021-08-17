@@ -9,11 +9,11 @@ app = Flask(__name__, template_folder='..', static_folder='../static')
 
 @app.route('/')
 def home(name=None):
-    return render_template('gui.html', name=name)
+    return render_template('index.html', name=name)
 
 @app.route('/gui')
 def gui(name=None):
-    return render_template('index.html', name=name)
+    return render_template('gui.html', name=name)
 
 
 if __name__ == '__main__':
