@@ -1,4 +1,7 @@
 var t;
+let gui;
+let b;
+let cx, cy;
 function setup(){
 	frameRate(120);
 	// colorMode(HSB, 100);
@@ -8,10 +11,39 @@ function setup(){
 	textAlign(CENTER, CENTER);
 	t = 0;
 
+	gui = createGui();
+	b = createCheckbox("cb", 50, 50);
+	cx = b.x;
+	cy = b.y;
+
 }
 
 function draw(){
+
 	clear();
+
+
+	if(b.isPressed){
+		b.x = random(0, windowWidth);
+		b.y = random(0, windowHeight);
+		cx = b.x;
+		cy = b.y;
+	}
+	if(b.val) {
+		background(100);
+		b.w = 50+10*(0.5+ 0.5*sin(frameCount/10));
+		b.h = 50+10*(0.5+ 0.5*sin(frameCount/10));
+		b.x = cx - b.w/2;
+		b.y = cy - b.h/2;
+
+	}
+	else{
+		b.x = cx;
+		b.y = cy;
+		background(20);
+	}
+
+	drawGui();
 
 	let x, y, offset_x, offset_y, amplitude_x, amplitude_y, frequency_x, frequency_y, phase_x, phase_y;
 	let R = random(1,10)
@@ -37,6 +69,8 @@ function draw(){
 		stroke(240,240,240);
 		fill(240, 240,240);
 		point(x,y);
+
+
 	}
 
 
