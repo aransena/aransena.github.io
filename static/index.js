@@ -31,7 +31,7 @@ function draw(){
             for (let i = rand[j]; i < rand[j] + N; i++) {
                 let t = frameCount + i;
                 strokeWeight(N/6 * (1.5 + 0.5 * sin(t / 2)));
-                stroke((0.5 + sin(0.5 * t / 5 + t / 20)+i)* 255, i%255+(N/1000)*255, i%255);
+                stroke((0.5 + sin(0.5 * t + t / 20)+i)* 255, i%255+(N/1000)*255, i%255);
                 fill(0, 240, 240);
                 let x = cos(rand[j] + t / 100 + t / (10+N*10) * sin((t / (1000+N*3))) + N/50) * windowWidth / 2 * 0.4 + windowWidth / 2 + windowWidth / windowHeight * sin(t / (100+N*100) + rand[j]/100+ (i/N)*2*Math.PI*N/500) + windowHeight / windowWidth * 100 * sin(t / (70+N*10+ (i/N)*2*Math.PI*N/500) + 2 * rand[j]/100*sin(t / 2000)) + windowHeight / windowWidth * 100 * cos(t / (339+N));// * sin(frameCount/10);
                 let y = sin(rand[j]+ t / (100-N*10) ) * windowHeight / 2 * 0.4 + windowHeight / 2 + windowWidth/windowHeight/(rand[j]+1) * sin(t/300) * windowHeight/100 * cos(t / 100) * sin(t / 1000 + (i/N)*2*Math.PI*N/500) + t/100*cos(t/(rand[j]+1+N*10));
