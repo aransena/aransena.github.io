@@ -14,6 +14,9 @@ function setup() {
         d.position(windowWidth/15, windowHeight/20+60);
         let e = createA('https://twitter.com/aransena','twitter.com/aransena');
         e.position(windowWidth/15, windowHeight/20+80);
+        let f = createA('https://scholar.google.co.uk/citations?user=PmpjruUAAAAJ&hl=en#','google scholar');
+        f.position(windowWidth/15, windowHeight/20+100);
+
 
 }
 
