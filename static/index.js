@@ -17,6 +17,16 @@ function setup() {
         e.position(windowWidth/15, windowHeight/20+80);
         let f = createA('https://scholar.google.co.uk/citations?user=PmpjruUAAAAJ&hl=en#','google scholar');
         f.position(windowWidth/15, windowHeight/20+100);
+	
+	let g = createA('https://aransena.github.io/qr1','QR 1');
+        g.position(windowWidth/15, windowHeight/20+140);
+	let h = createA('https://aransena.github.io/qr2','QR 2');
+        h.position(windowWidth/15, windowHeight/20+160);
+	let i = createA('https://aransena.github.io/qr3','QR 3');
+        i.position(windowWidth/15, windowHeight/20+180);
+	let j = createA('https://aransena.github.io/qr4','QR 4');
+        j.position(windowWidth/15, windowHeight/20+200);
+	
         for(let i = 0; i<50; i++) {
             rand.push(Math.floor(Math.random() * 1000));
         }
