@@ -7,6 +7,6 @@ function setup() {
 }
 
 function draw(){
-image(img1, -30, -30, img1.width, img1.height);
+image(img1, 0, 0, img1.width, img1.height);
 
 }
