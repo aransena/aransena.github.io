@@ -7,6 +7,7 @@ function setup() {
         text: "1,"+document.documentElement.clientWidth/document.documentElement.clientHeight,
         width: document.documentElement.clientWidth*0.25,
         height: document.documentElement.clientWidth*0.25,
+        margin: 5px,
         colorDark : "#000000",
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
