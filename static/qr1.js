@@ -4,7 +4,7 @@ function setup() {
     	createCanvas(windowWidth, windowHeight);
         //img1 = loadImage('static/QR1.png'); // Load the image
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "http://jindo.dev.naver.com/collie",
+        text: "1,"+document.documentElement.clientWidth/document.documentElement.clientHeight,
         width: document.documentElement.clientWidth*0.25,
         height: document.documentElement.clientWidth*0.25,
         colorDark : "#000000",
